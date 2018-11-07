@@ -1,11 +1,14 @@
 # depslib dependency file v1.0
-1541261806 source:d:\prueba\main.cpp
+1541562723 source:d:\prueba\main.cpp
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	"Game.h"
 	<Windows.h>
 	<MMSystem.h>
+	<stdio.h>
+	<stdlib.h>
+	<cstdlib>
 
 1540775964 d:\sfml-2.5.1\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -436,12 +439,15 @@
 
 1541169751 d:\prueba\include\rules.h
 
-1541170445 source:d:\prueba\src\game.cpp
+1541564012 source:d:\prueba\src\game.cpp
 	"Game.h"
 	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
 
-1541170445 d:\prueba\include\game.h
+1541562630 d:\prueba\include\game.h
 	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
 
 1540775964 d:\sfml-2.5.1\include\sfml\audio.hpp
 	<SFML/System.hpp>
