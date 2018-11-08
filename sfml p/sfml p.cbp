@@ -15,6 +15,7 @@
 					<Add option="-std=c++14" />
 					<Add option="-g" />
 					<Add directory="D:/c++/SFML-2.5.1/include" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-d" />
@@ -32,6 +33,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -54,9 +56,20 @@
 			<Add library="sfml-graphics" />
 			<Add library="sfml-window" />
 			<Add library="sfml-system" />
+			<Add library="winmm" />
 			<Add directory="C:/Program Files (x86)/SFML-2.5.1/lib" />
 		</Linker>
+		<Unit filename="include/Color.h" />
+		<Unit filename="include/Nivel.h" />
+		<Unit filename="include/Participantes .h" />
+		<Unit filename="include/Reglas.h" />
+		<Unit filename="include/juego.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Color.cpp" />
+		<Unit filename="src/Nivel.cpp" />
+		<Unit filename="src/Participantes .cpp" />
+		<Unit filename="src/Reglas.cpp" />
+		<Unit filename="src/juego.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
