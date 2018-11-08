@@ -1,0 +1,27 @@
+NIVELES:
+
+1.Empiezan en cero.
+  Random verdad o reto.
+
+2.Elegir 2 retos y 3 verdades.
+  Obligatorio.
+
+3.Escoge quien.
+  si la persona cumple el reto: +1 para el jugador.
+				+1 para el elegido.
+
+  si no cumple -1 SOLO al elegido.
+
+4.Comodín.
+ Tiempo 10 segundos.
+ Puede obviar la pregunta.
+ Ni -1 ni +1.
+
+5.Tiempo reducido a 10 segundos.
+  Si no cumple pierde TODOS sus puntos.
+
+
+COMENTARIOS:
+Total de tiempo del nivel 1-3: 20 segundos.
+Del 1-3: dos botones SI:+1, NO:-1.
+5°nivel: solo tiene SI.
