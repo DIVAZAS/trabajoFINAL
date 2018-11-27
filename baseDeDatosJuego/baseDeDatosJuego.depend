@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1543275588 source:c:\users\nicole\desktop\basededatosjuego\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<fstream>
+
