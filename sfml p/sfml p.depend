@@ -824,11 +824,11 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1541638228 d:\c++\sfml p\include\juego.h
+1543230398 d:\c++\sfml p\include\juego.h
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1541638432 source:d:\c++\sfml p\src\juego.cpp
+1543230621 source:d:\c++\sfml p\src\juego.cpp
 	"juego.h"
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -844,10 +844,17 @@
 
 1540924374 d:\c++\sfml p\include\nivel.h
 
-1540924233 source:d:\c++\sfml p\src\participantes .cpp
+1543226164 source:d:\c++\sfml p\src\participantes .cpp
 	"Participantes .h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+	"juego.h"
 
-1540924233 d:\c++\sfml p\include\participantes .h
+1543179813 d:\c++\sfml p\include\participantes .h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"juego.h"
 
 1540924288 source:d:\c++\sfml p\src\reglas.cpp
 	"Reglas.h"

@@ -8,25 +8,13 @@ juego::juego(int resolucion_x, int resolucion_y, string titulo)
 {
     ventana= new RenderWindow(VideoMode(resolucion_x,resolucion_y),titulo);
 
-    texturaprin=new Texture;
-    spriteprin=new Sprite;
 
-    texturaprin->loadFromFile("verdadoreto.png");//logo
-    spriteprin->setTexture(*texturaprin);//logo
-    spriteprin->setPosition(60,70);
 
-    evento1= new Event;
 
     //textos
+/*
     fuente1= new Font();
     fuente1->loadFromFile("fuente-de-letra.ttf");
-
-    txt_prin= new Text();
-    txt_prin->setFont(*fuente1);
-    txt_prin->setString("apachurrale I Enter I para empezar");
-    txt_prin->setPosition(150,500);
-    txt_prin->setColor(Color::Black);
-
 
     txt_ingresarjugadores.setFont(*fuente1);
     txt_ingresarjugadores.setString("1. ingresar jugadores");
@@ -38,13 +26,56 @@ juego::juego(int resolucion_x, int resolucion_y, string titulo)
     txt_verscore.setPosition(80,380);
     txt_verscore.setColor(Color::White);
 
-
-
+*/
+    pantallas();
 
 
     gameloop();
 }
 
+void juego::pantallas()
+{
+    pantalla1=new Texture;
+    spritep1=new Sprite;
+
+    pantalla1->loadFromFile("pantalla1.png");//logo
+    spritep1->setTexture(*pantalla1);//logo
+    spritep1->setPosition(0,0);
+
+    evento1= new Event;
+
+    pantalla2=new Texture;
+    spritep2=new Sprite;
+
+    pantalla2->loadFromFile("pantalla2.png");
+    spritep2->setTexture(*pantalla2);
+    spritep2->setPosition(0,0);
+    spritep2->setColor(Color::Transparent);
+
+    pantalla3=new Texture;
+    spritep3= new Sprite;
+
+    pantalla3->loadFromFile("pantalla3.png");
+    spritep3->setTexture(*pantalla3);
+    spritep3->setPosition(0,0);
+    spritep3->setColor(Color::Transparent);
+
+
+    ruleta3.loadFromFile("rn3.png");
+    rul3.setTexture(ruleta3);
+    rul3.setPosition(-800,0);
+
+    ruleta4.loadFromFile("rn4.png");
+    rul4.setTexture(ruleta4);
+    rul4.setPosition(-800,0);
+
+    ruleta5.loadFromFile("rn5.png");
+    rul5.setTexture(ruleta5);
+    rul5.setPosition(-800,0);
+
+
+
+}
 
 void juego::abrirp()
 {
@@ -59,17 +90,19 @@ void juego::abrirp()
 
 
     ventana->clear(Color::White);
-    ventana->draw(*txt_prin);
-    ventana->draw(txt_ingresarjugadores);
-    ventana->draw(txt_verscore);
-    ventana->draw(*spriteprin);
+    ventana->draw(*spritep1);
+    ventana->draw(*spritep2);
+    ventana->draw(*spritep3);
+    ventana->draw(rul3);
+    ventana->draw(rul4);
+    ventana->draw(rul5);
     ventana->display();
 }
 
 void juego::gameloop()
 {
-
-    /*Event event;
+    /*
+    Event event;
     SoundBuffer buffer;
     if(!buffer.loadFromFile("musicTF.wav"))
     {
@@ -78,8 +111,8 @@ void juego::gameloop()
 
     Sound sound;
     sound.setBuffer(buffer);
-    sound.play();*/
-
+    sound.play();
+    */
     while(ventana->isOpen()){
 
 
@@ -98,15 +131,51 @@ void juego::procesar_eventos()
         case Event::KeyPressed:
             if (Keyboard::isKeyPressed(Keyboard::Enter))
             {
-                spriteprin->setPosition(60,-60);
-                txt_prin->setColor(Color::White);
-                txt_ingresarjugadores.setColor(Color::Black);
-                txt_verscore.setColor(Color::Black);
+                spritep1->setColor(Color::Transparent);
+                spritep2->setColor(Color::Black);
+                spritep3->setColor(Color::Transparent);
 
+                rul3.setPosition(-800,0);
+                rul4.setPosition(-800,0);
+                rul5.setPosition(-800,0);
+            }
+            if (Keyboard::isKeyPressed(Keyboard::Escape))
+            {
+                spritep1->setColor(Color::Black);
+                spritep2->setColor(Color::Transparent);
+                spritep3->setColor(Color::Transparent);
+                rul3.setPosition(-800,0);
+                rul4.setPosition(-800,0);
+                rul5.setPosition(-800,0);
+            }
+            if (Keyboard::isKeyPressed(Keyboard::Num3))
+            {
+                spritep1->setColor(Color::Transparent);
+                spritep2->setColor(Color::Transparent);
+                spritep3->setColor(Color::Black);
+                rul3.setPosition(280,300);
+                rul4.setPosition(-800,0);
+                rul5.setPosition(-800,0);
 
+            }
+            if (Keyboard::isKeyPressed(Keyboard::Num4))
+            {
+                spritep1->setColor(Color::Transparent);
+                spritep2->setColor(Color::Transparent);
+                spritep3->setColor(Color::Black);
+                rul3.setPosition(-800,0);
+                rul4.setPosition(280,300);
+                rul5.setPosition(-800,0);
 
-
-
+            }
+            if (Keyboard::isKeyPressed(Keyboard::Num5))
+            {
+                spritep1->setColor(Color::Transparent);
+                spritep2->setColor(Color::Transparent);
+                spritep3->setColor(Color::Black);
+                rul3.setPosition(-800,0);
+                rul4.setPosition(-800,0);
+                rul5.setPosition(280,300);
 
             }
         }
