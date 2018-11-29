@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1541562723 source:d:\prueba\main.cpp
+1541698733 source:d:\prueba\main.cpp
 	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
@@ -429,25 +429,33 @@
 
 1541169731 d:\prueba\include\gamers.h
 
-1541169706 source:d:\prueba\src\level.cpp
+1543456161 source:d:\prueba\src\level.cpp
 	"Level.h"
-
-1541169706 d:\prueba\include\level.h
-
-1541169751 source:d:\prueba\src\rules.cpp
-	"Rules.h"
-
-1541169751 d:\prueba\include\rules.h
-
-1541564012 source:d:\prueba\src\game.cpp
 	"Game.h"
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<iostream>
 
-1541562630 d:\prueba\include\game.h
+1543456498 d:\prueba\include\level.h
+	"Game.h"
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
+	<iostream>
+
+1543321962 source:d:\prueba\src\rules.cpp
+
+1541169751 d:\prueba\include\rules.h
+
+1543456606 source:d:\prueba\src\game.cpp
+	"Game.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+
+1543456210 d:\prueba\include\game.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
 
 1540775964 d:\sfml-2.5.1\include\sfml\audio.hpp
 	<SFML/System.hpp>
