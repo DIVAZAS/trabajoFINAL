@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1543450225 source:c:\users\nicole\desktop\retosjuego\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
